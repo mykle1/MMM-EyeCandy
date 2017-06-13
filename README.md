@@ -8,7 +8,7 @@ You can even choose your own local images or internet images.
 
 ## Examples
 
-![](pix/1.GIF), ![](pix/2.GIF),
+![](pix/1.gif), ![](pix/2.gif),
 
 ## Installation
 
