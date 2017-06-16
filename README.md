@@ -23,7 +23,7 @@ You can even choose your own local images or internet images.
 		position: "top_center",
 		config: {
 			style: '1',            // 1 - 52 or use ownImagePath to override style
-			ownImagePath: '',      // ex: 'modules/MMM-EYES/pix/1.jpg', or internet url to image
+			ownImagePath: '',      // ex: 'modules/MMM-EyeCandy/pix/YOUR_PICTURE_NAME.jpg', or internet url to image
 		}
 	},
 	
