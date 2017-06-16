@@ -12,7 +12,7 @@ You can even choose your own local images or internet images.
 
 ## Installation
 
-* `git clone https://github.com/mykle1/MMM-EyeCandy` into the `~/MagicMirror/modules` directory.
+* `git clone https://github.com/mykle1/MMM-EyeCandy.git` into the `~/MagicMirror/modules` directory.
 * No API needed!
 * Annotated .css file included for exact sizing.
 
