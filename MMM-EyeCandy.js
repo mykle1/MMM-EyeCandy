@@ -9,8 +9,9 @@ Module.register("MMM-EyeCandy", {
 	// Default module config.
 	defaults: {
 		style: '1',                     // 1-52
+		maxWidth: "100%",               // Adjusts size of images. Retains aspect ratio.
 		ownImagePath: '',               // Overrides style. Local path or internet URL's.
-		updateInterval: 60 * 60 * 1000  // Use css file to adjust size of images. It's easy.
+		updateInterval: 60 * 60 * 1000  
 	},
 
 	start: function () {
@@ -92,9 +93,11 @@ Module.register("MMM-EyeCandy", {
 		if (this.config.ownImagePath != '') {
 			image.src = this.url;
 			image.className = "photo";
+			image.style.maxWidth = this.config.maxWidth;
 		} else if (this.config.style != ''){
 			image.src = this.url;
 			image.className = "photo";
+			image.style.maxWidth = this.config.maxWidth;
 		}
 		wrapper.appendChild(image);
 		return wrapper;
@@ -105,11 +108,9 @@ Module.register("MMM-EyeCandy", {
 
     notificationReceived: function(notification, payload) {
         if (notification === 'HIDE_EYECANDY') {
-            this.hide(1000);
-            this.updateDom(300);
+            this.hide();
         }  else if (notification === 'SHOW_EYECANDY') {
             this.show(1000);
-            this.updateDom(300);
         }
             
     },
