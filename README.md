@@ -22,6 +22,7 @@ You can even choose your own local images or internet images.
         module: "MMM-EyeCandy",
 		position: "top_center",
 		config: {
+			maxWidth: "75%,        // Sizes the images. Retains aspect ratio.
 			style: '1',            // 1 - 52 or use ownImagePath to override style
 			ownImagePath: '',      // ex: 'modules/MMM-EyeCandy/pix/YOUR_PICTURE_NAME.jpg', or internet url to image
 		}
