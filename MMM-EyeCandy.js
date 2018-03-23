@@ -12,7 +12,7 @@ Module.register("MMM-EyeCandy", {
 		maxWidth: "100%",               // Adjusts size of images. Retains aspect ratio.
 		ownImagePath: '',               // Overrides style. Local path or internet URL's.
 		updateInterval: 5 * 60 * 1000,  // set in config.js
-        animationSpeed: 3000,
+        	animationSpeed: 3000,
 	},
 
 	start: function () {
