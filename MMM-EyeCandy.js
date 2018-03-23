@@ -11,7 +11,8 @@ Module.register("MMM-EyeCandy", {
 		style: '1',                     // 1-52
 		maxWidth: "100%",               // Adjusts size of images. Retains aspect ratio.
 		ownImagePath: '',               // Overrides style. Local path or internet URL's.
-		updateInterval: 60 * 60 * 1000  
+		updateInterval: 5 * 60 * 1000,  // set in config.js
+        animationSpeed: 3000,
 	},
 
 	start: function () {
@@ -80,6 +81,12 @@ Module.register("MMM-EyeCandy", {
 				this.url = this.eyesUrls[this.config.style];
 			}
 		}
+        
+     // ADDED: Schedule update timer courtesy of ninjabreadman
+    setInterval(function() {
+    self.updateDom(self.config.animationSpeed || 0); // use config.animationSpeed or revert to zero @ninjabreadman
+    }, this.config.updateInterval);
+        
 	},
 
 	getStyles: function () {
@@ -90,16 +97,24 @@ Module.register("MMM-EyeCandy", {
 	getDom: function () {
 		var wrapper = document.createElement("div");
 		var image = document.createElement("img");
+        var getTimeStamp = new Date();
 		if (this.config.ownImagePath != '') {
-			image.src = this.url;
+			image.src = this.url + "?seed=" + getTimeStamp;
 			image.className = "photo";
 			image.style.maxWidth = this.config.maxWidth;
 		} else if (this.config.style != ''){
-			image.src = this.url;
+			image.src = this.url + "?seed=" + getTimeStamp;
 			image.className = "photo";
 			image.style.maxWidth = this.config.maxWidth;
 		}
 		wrapper.appendChild(image);
+        
+        // timestamp
+//        var timestamp = document.createElement("div");
+//        timestamp.classList.add("xsmall", "bright", "timestamp");
+//        timestamp.innerHTML = new Date; //moment().local().format('h:mm a');
+//        wrapper.appendChild(timestamp);
+     
 		return wrapper;
 	},
 	
@@ -114,5 +129,5 @@ Module.register("MMM-EyeCandy", {
         }
             
     },
-	
+
 });
