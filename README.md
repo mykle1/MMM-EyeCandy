@@ -25,6 +25,8 @@ You can even choose your own local images or internet images.
 			maxWidth: "75%",       // Sizes the images. Retains aspect ratio.
 			style: '1',            // 1 - 52 or use ownImagePath to override style
 			ownImagePath: '',      // ex: 'modules/MMM-EyeCandy/pix/YOUR_PICTURE_NAME.jpg', or internet url to image
+			updateInterval: 2 * 60 * 1000, // How often module updates
+                	animationSpeed: 3000, // transition speed at update time
 		}
 	},
 	
