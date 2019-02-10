@@ -25,11 +25,9 @@ You can even choose your own local images or internet images.
 			maxWidth: "75%",       // Sizes the images. Retains aspect ratio.
 			style: '1',            // 1 - 52 or use ownImagePath to override style
 			ownImagePath: '',      // ex: 'modules/MMM-EyeCandy/pix/YOUR_PICTURE_NAME.jpg', or internet url to image
-			updateInterval: 30 * 60 * 1000, // How often module updates
-                	animationSpeed: 3000, // transition speed at update time
 		}
 	},
-	
+
 ## Choose your config.js "style:" from this list.
 ## Just the number!
 
@@ -97,9 +95,20 @@ You can even choose your own local images or internet images.
 * 50 - The cutest fucking 3D smiley face. (Are you mad I said "cutest" or "fucking?")
 * 51 - When smiley faces are in love it's pathetic.
 
+## I need some space
+
+* 53 - Slow moon rotation
+* 54 - Fast moon rotation
+* 55 - Moon in your garage (Pretty sick)
+* 56 - Earth rotates
+
+## When your wife/GF wants something girly on your Mirror
+
+* 57 - Girly girlyFantasy
+* 58 - Girly girlyFantasy
+
+
 ## Remember!
 
 * You can always use local files that you have or url's to internet photos
 * I know, I said this already. Use the css file to size the animations
-
-
