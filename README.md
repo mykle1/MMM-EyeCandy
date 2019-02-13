@@ -10,6 +10,8 @@ You can even choose your own local images or internet images.
 
 ![](pix/1.gif), ![](pix/2.gif),
 
+![](pix/4.gif),
+
 ## Installation
 
 * `git clone https://github.com/mykle1/MMM-EyeCandy.git` into the `~/MagicMirror/modules` directory.
