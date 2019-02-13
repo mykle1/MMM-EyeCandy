@@ -30,9 +30,8 @@ You can even choose your own local images or internet images.
 ```
 
 ## Choose your config.js "style:" from this list.
-## Just the number!
 
-* Remember to use the css file to size these just the way you want them!
+# Just the number!
 
 *  1 - Crazy human eye
 *  2 - Cartoon eyes
