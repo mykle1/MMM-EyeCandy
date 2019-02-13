@@ -17,6 +17,7 @@ You can even choose your own local images or internet images.
 
 ## Config.js entry and options
 
+```
 {
     module: "MMM-EyeCandy",
     position: "top_center",
@@ -26,6 +27,7 @@ You can even choose your own local images or internet images.
         ownImagePath: '',      // ex: 'modules/MMM-EyeCandy/pix/YOUR_PICTURE_NAME.jpg', or internet url to image
     }
 },
+```
 
 ## Choose your config.js "style:" from this list.
 ## Just the number!
