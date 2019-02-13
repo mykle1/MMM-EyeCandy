@@ -101,11 +101,17 @@ You can even choose your own local images or internet images.
 * 54 - Fast moon rotation
 * 55 - Moon in your garage (Pretty sick)
 * 56 - Earth rotates
+* 59 - Jupiter
+* 60 - Jupiter2
+* 61 - Mars with moons
+* 62 - Venus
+* 63 - Earth Phases
+* 64 - The sun
 
 ## When your wife/GF wants something girly on your Mirror
 
 * 57 - Girly girlyFantasy
-* 58 - Girly girlyFantasy
+* 58 - Girly girlyFantasy2
 
 
 ## Remember!

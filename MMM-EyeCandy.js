@@ -77,6 +77,14 @@ Module.register("MMM-EyeCandy", {
             '56': 'https://media.giphy.com/media/4NPT1ipEUoiMo/giphy.gif',
             '57': 'https://media.giphy.com/media/WuaGC7DUTeJW0/giphy.gif',
             '58': 'https://media.giphy.com/media/ZSUtKFTbwndYs/giphy.gif',
+            // Evidently I'm still bored 2/12/2019
+            '59': 'https://media.giphy.com/media/s2uampOAMWksU/giphy.gif',
+            '60': 'https://media.giphy.com/media/dbopGHCaI2zsY/giphy.gif',
+            '61': 'https://media.giphy.com/media/ql77HNnLAjV4s/giphy.gif',
+            '62': 'https://media.giphy.com/media/eAMJgzoGAEwCc/giphy.gif',
+            '63': 'https://media.giphy.com/media/vZqiytAaw85Ne/giphy.gif',
+            '64': 'https://media.giphy.com/media/PNf2Ke7gn6oDK/giphy.gif',
+
         }
 
         //	console.log(this.eyesUrls[this.config.style]);
