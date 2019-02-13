@@ -14,7 +14,6 @@ You can even choose your own local images or internet images.
 
 * `git clone https://github.com/mykle1/MMM-EyeCandy.git` into the `~/MagicMirror/modules` directory.
 * No API needed!
-* Annotated .css file included for exact sizing.
 
 ## Config.js entry and options
 
@@ -117,4 +116,3 @@ You can even choose your own local images or internet images.
 ## Remember!
 
 * You can always use local files that you have or url's to internet photos
-* I know, I said this already. Use the css file to size the animations
