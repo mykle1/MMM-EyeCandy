@@ -10,7 +10,7 @@ Module.register("MMM-EyeCandy", {
         style: '1', // 1-52
         maxWidth: "100%", // Adjusts size of images. Retains aspect ratio.
         ownImagePath: '', // Overrides style. Local path or internet URL's.
-        updateInterval: 10 * 1000, // set in config.js
+        updateInterval: 5 * 60 * 1000, // set in config.js
         animationSpeed: 3000,
     },
 
@@ -84,6 +84,27 @@ Module.register("MMM-EyeCandy", {
             '62': 'https://media.giphy.com/media/eAMJgzoGAEwCc/giphy.gif',
             '63': 'https://media.giphy.com/media/vZqiytAaw85Ne/giphy.gif',
             '64': 'https://media.giphy.com/media/PNf2Ke7gn6oDK/giphy.gif',
+            // Additions on 11/24/2019
+            '65': 'https://www.thisiscolossal.com/wp-content/uploads/2018/04/agif2opt.gif',
+            '66': 'https://www.thisiscolossal.com/wp-content/uploads/2018/04/agif5opt.gif',
+            '67': 'https://www.thisiscolossal.com/wp-content/uploads/2018/12/agifcolossalsphere2.gif',
+            '68': 'https://www.thisiscolossal.com/wp-content/uploads/2018/12/agifcolossalspiral2opt.gif',
+            '69': 'https://www.thisiscolossal.com/wp-content/uploads/2018/12/agifcolossaltd2opt.gif',
+            '70': 'https://www.thisiscolossal.com/wp-content/uploads/2014/03/120430.gif',
+            '71': 'https://www.thisiscolossal.com/wp-content/uploads/2014/03/120515.gif',
+            '72': 'https://www.thisiscolossal.com/wp-content/uploads/2014/03/130207.gif',
+            '73': 'https://www.thisiscolossal.com/wp-content/uploads/2014/03/130304.gif',
+            '74': 'https://www.thisiscolossal.com/wp-content/uploads/2014/03/130309.gif',
+            '75': 'https://www.thisiscolossal.com/wp-content/uploads/2014/03/130407.gif',
+            '76': 'https://www.thisiscolossal.com/wp-content/uploads/2014/03/140104.gif',
+            '77': 'https://www.thisiscolossal.com/wp-content/uploads/2014/06/6.gif',
+            '78': 'https://www.thisiscolossal.com/wp-content/uploads/2017/08/Switching_Sides.gif',
+            '79': 'https://www.thisiscolossal.com/wp-content/uploads/2017/08/Lava_Burst.gif',
+            '80': 'https://www.thisiscolossal.com/wp-content/uploads/2017/08/Cracked_Gem.gif',
+            '81': 'https://www.thisiscolossal.com/wp-content/uploads/2018/08/Isopoly_05.gif',
+            '82': 'https://www.thisiscolossal.com/wp-content/uploads/2018/08/Isopoly_02.gif',
+            '83': 'https://www.thisiscolossal.com/wp-content/uploads/2018/08/Isopoly_03.gif',
+            '84': 'https://www.thisiscolossal.com/wp-content/uploads/2018/08/Isopoly_04.gif',
 
         }
 
