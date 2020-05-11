@@ -105,6 +105,8 @@ Module.register("MMM-EyeCandy", {
             '82': 'https://www.thisiscolossal.com/wp-content/uploads/2018/08/Isopoly_02.gif',
             '83': 'https://www.thisiscolossal.com/wp-content/uploads/2018/08/Isopoly_03.gif',
             '84': 'https://www.thisiscolossal.com/wp-content/uploads/2018/08/Isopoly_04.gif',
+            // Added 5/10/20
+            '84': 'https://media.giphy.com/media/VgBk8EZQILIaPIJymY/giphy.gif',
 
         }
 
