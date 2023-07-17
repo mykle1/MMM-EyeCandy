@@ -26,7 +26,7 @@ You can even choose your own local images or internet images.
     config: {
         maxWidth: "75%",       // Sizes the images. Retains aspect ratio.
         style: '1',            // Style number or use ownImagePath to override style
-        ownImagePath: '',      // ex: 'modules/MMM-EyeCandy/pix/YOUR_PICTURE_NAME.jpg', or internet url to image
+        ownImagePath: [],      // ex: ['modules/MMM-EyeCandy/pix/YOUR_PICTURE_NAME.jpg', 'modules/MMM-EyeCandy/pix/YOUR_PICTURE_NAME2.jpg']. can also be a combination of internet and local images
     }
 },
 ```
