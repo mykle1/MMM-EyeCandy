@@ -6,6 +6,15 @@ Add some EyeCandy to your mirror. Some are funny. Some are cool. All are enterta
 
 You can even choose your own local images or internet images.
 
+if you put multiple paths in the ownImagePath config key, then it will turn into a slide show.
+
+you can change the speed of transition and animation by putting the following keys in the config
+{
+...
+updateInterval: 5 * 60 * 1000, // set in config.js
+animationSpeed: 3000,
+...
+}
 ## Examples
 
 ![](pix/1.gif), ![](pix/2.gif),
@@ -30,6 +39,14 @@ You can even choose your own local images or internet images.
     }
 },
 ```
+
+stated above, but to repeat the point, you can change the speed of transition and animation by putting the following keys in the config 
+config: {
+...
+updateInterval: 5 * 60 * 1000, // set in config.js
+animationSpeed: 3000,
+...
+}
 
 ## Choose your config.js "style:" from this list.
 
