@@ -9,9 +9,12 @@ Module.register("MMM-EyeCandy", {
     defaults: {
         style: '1', // 1-52
         maxWidth: "100%", // Adjusts size of images. Retains aspect ratio.
-        ownImagePath: '', // Overrides style. Local path or internet URL's.
+        // Overrides style. Local path or internet URL's. This will be a list of urls that can be set
+        //in config.js
+        ownImagePaths: [],
         updateInterval: 5 * 60 * 1000, // set in config.js
         animationSpeed: 3000,
+        currentImg: 0,
     },
 
     start: function() {
@@ -109,20 +112,25 @@ Module.register("MMM-EyeCandy", {
             '84': 'https://media.giphy.com/media/VgBk8EZQILIaPIJymY/giphy.gif',
 
         }
-
         //	console.log(this.eyesUrls[this.config.style]);
-        if (this.config.ownImagePath != '') {
-            this.url = this.config.ownImagePath;
+        if (this.config.ownImagePaths.length >= 1) {
+            this.url = this.config.ownImagePaths[this.config.currentImg%this.config.ownImagePaths.length]; //the modulo operator (%) allows you to loop through the images provided
         } else {
             if (this.config.style != '') {
                 this.url = this.eyesUrls[this.config.style];
             }
         }
-
         // ADDED: Schedule update timer courtesy of ninjabreadman
         var self = this;
-        setInterval(function() {
-            self.updateDom(self.config.animationSpeed || 0); // use config.animationSpeed or revert to zero @ninjabreadman
+        const intervalId = setInterval(function() {
+            //the dom will not update if there are not images to cycle through
+            if (self.config.ownImagePaths.length > 1) {
+                self.config.currentImg += 1; //increasing the currentImg value in order to cycle through array of images
+                self.url = self.config.ownImagePaths[self.config.currentImg%self.config.ownImagePaths.length];
+                self.updateDom(self.config.animationSpeed || 0); // use config.animationSpeed or revert to zero @ninjabreadman
+            } else {
+                clearInterval(intervalId); //clear the interval if there is no need to cycle through images
+            }
         }, this.config.updateInterval);
 
     },
@@ -136,17 +144,14 @@ Module.register("MMM-EyeCandy", {
         var wrapper = document.createElement("div");
         var image = document.createElement("img");
         var getTimeStamp = new Date();
-        if (this.config.ownImagePath != '') {
-            image.classList.add = "photo";
-            image.src = this.url + "?seed=" + getTimeStamp;
 
-            image.style.maxWidth = this.config.maxWidth;
-        } else if (this.config.style != '') {
+        if (this.config.ownImagePaths.length > 1 || this.config.style != '') {
             image.classList.add = "photo";
             image.src = this.url + "?seed=" + getTimeStamp;
 
             image.style.maxWidth = this.config.maxWidth;
         }
+
         wrapper.appendChild(image);
 
         return wrapper;
