@@ -4,10 +4,17 @@
  * Pick your color, copy and paste the HEX number. Example - #62FF00 = bright green.
  */
 
-
 .MMM-EyeCandy .photo {
-	-webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
-    -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
-     box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
-	margin-top: 10px;
+  -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  margin-top: 10px;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+
+.MMM-EyeCandy .photo img {
+  width: 100%;
+  height: auto;
 }
